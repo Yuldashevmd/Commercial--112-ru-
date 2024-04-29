@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://localhost:3000/pdf" method="POST">
+      <div class="title">Заполните форму:</div>
+      <label for="phoneNumber">Номер телефона:</label>
+      <input
+        type="text"
+        id="phoneNumber"
+        required
+        name="number"
+        placeholder="Номер телефона"
+      />
+
+      <label for="organizationName">Название организации:</label>
+      <input
+        type="text"
+        id="organizationName"
+        required
+        name="org_name"
+        placeholder="Название организации"
+      />
+      <input type="submit" value="Отправить" id="submit" />
+    </form>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <object
+          id="pdfObject"
+          type="application/pdf"
+          data="./assets/commercial_offer_rus_2023-12 (2).pdf"
+          width="100%"
+          height="700px"
+        ></object>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
