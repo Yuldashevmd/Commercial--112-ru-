@@ -25,25 +25,25 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css
     </div>
     <form id="myForm">
       <div class="title">
-        Заполните форму, чтобы получить коммерческое предложение::
+        Заполните форму, чтобы получить коммерческое предложение:
       </div>
       <div class="form-content">
         <div class="form-item">
-          <label for="full_name">ФИО:</label>
+          <label for="full_name">Ф.И.О:</label>
           <div class="icon-input">
             <i class="fa fa-user icon"></i>
             <input
               type="text"
               id="full_name"
               name="full_name"
-              placeholder="ФИО"
+              placeholder="Ф.И.О"
             />
           </div>
           <p
             class="error-fio"
             style="display: none; color: crimson; margin: 0; font-size: 12px"
           >
-            Пожалуйста, введите ваше ФИО!
+            Пожалуйста, введите ваше Ф.И.О!
           </p>
         </div>
         <div class="form-item">
@@ -66,28 +66,28 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css
           </p>
         </div>
         <div class="form-item">
-          <label for="organizationName">Название организации:</label>
+          <label for="organizationName">Наименование организации:</label>
           <div class="icon-input">
             <i class="fa fa-building icon"></i>
             <input
               type="text"
               id="organizationName"
               name="org_name"
-              placeholder="Название организации"
+              placeholder="Наименование организации"
             />
           </div>
           <p
             class="error-org"
             style="display: none; color: crimson; margin: 0; font-size: 12px"
           >
-            Пожалуйста, введите название организации!
+            Пожалуйста, введите наименование организации!
           </p>
         </div>
       </div>
 
       <button id="submit" type="submit" form="myForm" value="Submit">
         <div class="loader"></div>
-        Получить КП
+        Отправить
       </button>
     </form>
 
